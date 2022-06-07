@@ -9,3 +9,5 @@ the user Francesco proposes a solution to do this, however:
 2. He does not include `<objc/runtime.h>` in his code without which objc_createInstance appears to return an int instead of id.
 3. the `+ (id) alloc` of `RootObject` implementation, class_createInstance's first argument is `[self class]`, whereas it 
     needs to be just `self`.
+
+Using the `main.m` of this project as a conceptional base, it is possible to write your own root objects to use for your mingw/msys2 objective c projects.
