@@ -2,8 +2,8 @@ This project serves as a proof of concept for compiling objective c code with ro
 
 This specific project is warranted/justified as this is the third time I am remaking this exact proof-of-concept as all the existing online solutions are incomplete, with the closest solution being a flawed response within the question linked below. 
 
-the question:
-https://stackoverflow.com/questions/10119971/objective-c-compilation-with-gcc-4-6-2
+the question: https://stackoverflow.com/questions/10119971/objective-c-compilation-with-gcc-4-6-2
+
 the user Francesco proposing an answer to do this, however: 
 1. He does not include `<objc/Object.h>` which his code relies on
 2. He does not include `<objc/runtime.h>` without which objc_createInstance appears to return an int instead of id.
