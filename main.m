@@ -14,7 +14,7 @@
 }
 @end
 
-// a ref counted object
+// a naive rough simulation of NSObject, do not use in production code as is.
 @interface RootObject : Object {
     unsigned int retainCount;
 }
@@ -23,7 +23,6 @@
 - (id) retain;
 - (void) release;
 @end
-
 @implementation RootObject
 + (id) alloc {
     // let us assure ourselves that these two are equivelent in terms of general behavior.
@@ -56,6 +55,7 @@
 }
 @end
 
+// proof of concept to demonstrate instantiation/subclassing of RootObject
 @interface Greeter : RootObject {}
 - (void) greet;
 @end
