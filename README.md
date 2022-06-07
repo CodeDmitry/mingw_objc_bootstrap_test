@@ -1,7 +1,6 @@
 This project serves as a proof of concept for compiling objective c code with root object support(analogous to NSObject) using gcc under msys2 environment. 
 
-This specific project is warranted/justified as this is the third time I am remaking this exact proof-of-concept, due to all online solutions being incomplete,
-with closest one being the question linked below, having specific problems I need to solve each time I want to use objective c in mingw.
+This specific project is warranted/justified as this is the third time I am remaking this exact proof-of-concept as all the existing online solutions are incomplete, with the closest solution being a flawed response within the question linked below. 
 
 the question:
 https://stackoverflow.com/questions/10119971/objective-c-compilation-with-gcc-4-6-2
