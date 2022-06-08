@@ -35,7 +35,7 @@
 }
 - (id) init {
     retainCount = 1;
-    puts("initialized");
+    puts("[RootObject:init] initializing");
     return self;
 }
 - (id) retain {
@@ -58,10 +58,15 @@
 // proof of concept to demonstrate instantiation/subclassing of RootObject
 @interface Greeter : RootObject {}
 - (void) greet;
+- (id) greetWithMessage:(const char *)theMessage;
 @end
 @implementation Greeter 
 - (void) greet {
     puts("[Greeter:greet] Hello, World!");
+}
+- (id) greetWithMessage:(const char *)theMessage {
+    printf("[Greeter:greetWithMessage] %s\n", theMessage);
+    return self;
 }
 @end
 
@@ -76,6 +81,8 @@ int main(int argc, char **argv)
     id greeter = [[Greeter alloc] init];
     [greeter greet];    
     [greeter release];
+    
+    [[[[Greeter alloc] init] greetWithMessage: "Custom Greeting!"] release];
 
     return 0;
 }   
