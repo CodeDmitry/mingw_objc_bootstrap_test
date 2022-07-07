@@ -11,6 +11,8 @@ Contents:
 - test1.m a fairly minimal proof of concept of objective c testing some of the main features I wanted to try out.
 - test2.m tests RootObject.h which is extracted out of test1.m with all comments and logging removed.
 
+Background:
+
 This specific project is warranted/justified as this is the third time I am remaking this exact proof-of-concept as all the existing online solutions are incomplete, with the closest solution being a flawed response within the question linked below. 
 
 the question: https://stackoverflow.com/questions/10119971/objective-c-compilation-with-gcc-4-6-2
