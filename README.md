@@ -2,7 +2,7 @@ This project serves as a proof of concept for compiling objective c code with ro
 
 Contents:
 - README.md this file
-- RootObject.h, implements RootObject, naively simulating behavior of NSObject, no thread safety implemented, no quality guarantees.
+- RootObject.h, implements RootObject, simulating minimal behavior of NSObject, no thread safety implemented, no quality guarantees, absolutely minimal.
 - build a bash script to build the test programs "test1.m" and "test2.m".
 - test1.m a fairly minimal proof of concept of objective c testing some of the main features I wanted to try out.
 - test2.m tests RootObject.h which is extracted out of main.m with all comments and logging removed.
