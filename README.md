@@ -9,7 +9,7 @@ Contents:
 - RootObject.h, implements RootObject, simulating minimal behavior of NSObject, no thread safety implemented, no quality guarantees, absolutely minimal.
 - build a bash script to build the test programs "test1.m" and "test2.m".
 - test1.m a fairly minimal proof of concept of objective c testing some of the main features I wanted to try out.
-- test2.m tests RootObject.h which is extracted out of main.m with all comments and logging removed.
+- test2.m tests RootObject.h which is extracted out of test1.m with all comments and logging removed.
 
 This specific project is warranted/justified as this is the third time I am remaking this exact proof-of-concept as all the existing online solutions are incomplete, with the closest solution being a flawed response within the question linked below. 
 
@@ -21,4 +21,4 @@ the user Francesco proposes a solution to do this, however:
 3. the `+ (id) alloc` of `RootObject` implementation, class_createInstance's first argument is `[self class]`, whereas it 
     needs to be just `self`.
 
-Using the `main.m` of this project as a conceptional base, it is possible to write your own root objects to use for your mingw/msys2 objective c projects.
+Using the `test1.m` of this project as a conceptional base, it is possible to write your own root objects to use for your mingw/msys2 objective c projects.
