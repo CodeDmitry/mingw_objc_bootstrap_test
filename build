@@ -1,2 +1,3 @@
 #!/bin/bash
-gcc main.m -o main -lobjc && echo "done"
+gcc test1.m -o test1 -lobjc && echo "test1 built"
+gcc test2.m -o test2 -lobjc && echo "test2 built"
