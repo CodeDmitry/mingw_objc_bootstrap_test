@@ -3,8 +3,8 @@ This project serves as a proof of concept for compiling objective c code with ro
 Contents:
 - README.md this file
 - RootObject.h, implements RootObject, naively simulating behavior of NSObject, no thread safety implemented, no quality guarantees.
-- build a bash script to build the test program "main.m".
-- main.m a fairly comprehensive minimal proof of concept of objective c.
+- build a bash script to build the test programs "test1.m" and "test2.m".
+- test1.m a fairly minimal proof of concept of objective c testing some of the main features I wanted to try out.
 - test2.m tests RootObject.h which is extracted out of main.m with all comments and logging removed.
 
 This specific project is warranted/justified as this is the third time I am remaking this exact proof-of-concept as all the existing online solutions are incomplete, with the closest solution being a flawed response within the question linked below. 
