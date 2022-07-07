@@ -1,8 +1,8 @@
 Summary:
-- Objective C is a fun extension to C, however, at the time of writing MSYS/MinGW does not offer NSObject out of the box. 
-- NSObject or equivelent root object is necessary in Objective C to do anything except for call class methods(~static methods).
+- Objective C is a fun extension to C, however, at the time of writing, MSYS/MinGW does not offer NSObject out of the box. 
+- NSObject or equivelent root object is necessary in Objective C to do anything except for calling of class methods(~static methods).
 - Figuring out how to make an NSObject/RootObject is not obvious, so this project offers one for you, namely RootObject implemented in `RootObject.h`.
-- In addition to providing `RootObject.h`, this project provides two proof of concept tests for objective C contained in `test1.m` and `test2.m` respectively.
+- In addition to providing `RootObject.h`, this project provides two proof of concept tests for objective C contained in `test1.m` and `test2.m` respectively, the first test is more verbose and covers more features of objective C. The second test is minimal and mainly tests whether `RootObject.h` behaves as expected.
 
 Contents:
 - README.md this file
