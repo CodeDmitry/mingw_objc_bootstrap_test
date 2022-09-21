@@ -12,6 +12,7 @@
 - (id) retain;
 - (void) release;
 @end
+
 @implementation RootObject
 + (id) alloc {
     id myObj = (id)class_createInstance(self, 0);  
