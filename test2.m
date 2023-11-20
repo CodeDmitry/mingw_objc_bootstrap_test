@@ -2,8 +2,8 @@
 // Demonstrates instantiation and subclassing of RootObject, 
 // as well as catching messages and forwarding them to the
 // superclass.
-#include "RootObject.h"
-#include <stdio.h>
+#import "RootObject.h"
+#import <stdio.h>
 
 // The interface.
 @interface Greeter : RootObject {}
