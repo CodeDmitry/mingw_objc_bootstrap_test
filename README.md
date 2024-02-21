@@ -1,13 +1,12 @@
 Summary:
 
-At the time of writing, MinGW supports the compilation of objective C via the `-lobjc` flag, however there is no provided root object to use for creating your own Objective C classes. 
-
 - At the time of writing, MSYS2 supports Objective C via gcc's `-lobjc` flag, gcc however does not offer an NSObject equivalent with fresh installations. 
 - NSObject or an equivelent root object is necessary in order to have Objective C do except for calling of class methods(~static methods).
 - Figuring out how to make an NSObject/RootObject is not trivial, so this project offers one as an example, namely RootObject implemented in `RootObject.h`.
 - In addition to providing `RootObject.h`, this project provides two demonstrations for objective C contained in `test1.m` and `test2.m` (both built with `build` script provided). The first test is more verbose and covers more features of objective C. The second test is minimal and tests whether `RootObject.h` behaves as expected.
 
 Contents:
+
 - README.md this file
 - RootObject.h, implements RootObject, simulating minimal behavior of NSObject, no thread safety implemented, no quality guarantees, absolutely minimal.
 - build a bash script to build the test programs "test1.m" and "test2.m".
